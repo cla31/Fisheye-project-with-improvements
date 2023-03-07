@@ -1,5 +1,5 @@
 # Fisheye-project-with-improvements
-
+![LOGO](./assets/images/logo.png)
 Application overview  (in desktop version):
 <br/>
 <br/>
