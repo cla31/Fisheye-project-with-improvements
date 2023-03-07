@@ -5,5 +5,7 @@ Application overview  (in desktop version):
 <br/>
 ![DESKTOP-VERSION](./desktop-version.png)
 Application overview (in mobile version):
-
+Schematization of the structure of the code:
+<br/>
+<br/>
 ![SCHEMA-CODE](./Schema-structure-code-P6.png)
