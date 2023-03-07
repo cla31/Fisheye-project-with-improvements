@@ -7,7 +7,7 @@ Application overview  (in desktop version):
 Application overview (in mobile version):
 <br/>
 <br/>
-
+![MOBILE-VERSION](./mobile-version.png)
 Schematization of the structure of the code:
 <br/>
 <br/>
