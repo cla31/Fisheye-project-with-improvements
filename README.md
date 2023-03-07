@@ -15,3 +15,8 @@ Skills developed:
 - Write maintainable JavaScript code
 ##
 To view the page online click  :point_right: [here]( https://cla31.github.io/Fisheye-project-with-improvements/)
+##
+Application overview  (in desktop version):
+<br/>
+<br/>
+![DESKTOP-VERSION](./desktop-version.png)
