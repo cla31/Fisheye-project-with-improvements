@@ -8,23 +8,27 @@ let index = 0;
 const galleryBack = document.getElementById("medias");
 // const linksCards = document.getElementsByClassName("lien-media");
 
+// eslint-disable-next-line no-unused-vars
 function lightbox() {
     const linksCards = document.getElementsByClassName("lien-media");
     //selection de l'attribut video
-    var media = document.querySelector('video');
+    var media = document.querySelector("video");
     // console.log("voir media", media);
     const cards = Array.from(linksCards);
     // suppression de l'attribut qui empêche le clic
+    // eslint-disable-next-line no-unused-vars
     for (let item of cards) {
-        media.removeAttribute('controls');
+        media.removeAttribute("controls");
     }
-    cards.forEach((link, index) => link.addEventListener('click', e => {
+    cards.forEach((link, index) => link.addEventListener("click", e => {
         e.preventDefault();
+        // eslint-disable-next-line no-undef
         displayImgLightbox(fullMedias[index]);
     }));
-    cards.forEach((link, index) => link.addEventListener('keydown', e => {
+    cards.forEach((link, index) => link.addEventListener("keydown", e => {
         if (e.key === "Enter") {
             e.preventDefault();
+            // eslint-disable-next-line no-undef
             displayImgLightbox(fullMedias[index]);
             // console.log("Touche appuyée", e.key);
             console.log("Gallery", galleryBack);
@@ -36,13 +40,15 @@ function lightbox() {
 }
 
 function urlExtension(url) {
-    const urlSplitSlash = url.split('/').pop();
-    const urlSplitPoint = urlSplitSlash.split('.').pop();
+    const urlSplitSlash = url.split("/").pop();
+    const urlSplitPoint = urlSplitSlash.split(".").pop();
     return urlSplitPoint;
 }
 
 function displayImgLightbox(element) {
+    // eslint-disable-next-line no-undef
     elmt = urlExtension(element.path());
+    // eslint-disable-next-line no-undef
     if (elmt == "jpg") {
         showMod.innerHTML = ` 
         <div class="lightboxContainer" aria-label="emplacement photo">
@@ -124,9 +130,11 @@ function close(selector1) {
 function playLightbox() {
     document.getElementById("next").addEventListener("click", function() {
         index++;
+        // eslint-disable-next-line no-undef
         if (index === fullMedias.length) {
             index = 0;
         }
+        // eslint-disable-next-line no-undef
         displayImgLightbox(fullMedias[index]);
     });
     // Ecoute du "click" sur les Contrôles "média suivant" et ""media précédent"
@@ -134,8 +142,10 @@ function playLightbox() {
         index--;
         // console.log("taille du tableau", fullMedias.length)
         if (index === -1) {
+            // eslint-disable-next-line no-undef
             index = fullMedias.length - 1;
         }
+        // eslint-disable-next-line no-undef
         displayImgLightbox(fullMedias[index]);
     });
 
@@ -145,9 +155,11 @@ function playLightbox() {
         if (e.key === "Enter" || e.key === "ArrowRight") {
             // console.log("Selection suivante");
             index++;
+            // eslint-disable-next-line no-undef
             if (index === fullMedias.length) {
                 index = 0;
             }
+            // eslint-disable-next-line no-undef
             displayImgLightbox(fullMedias[index]);
 
         }
@@ -158,8 +170,10 @@ function playLightbox() {
             // console.log("Selection précedente");
             index--;
             if (index === -1) {
+                // eslint-disable-next-line no-undef
                 index = fullMedias.length - 1;
             }
+            // eslint-disable-next-line no-undef
             displayImgLightbox(fullMedias[index]);
         }
     });

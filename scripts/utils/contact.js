@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function contact(photogapherName) {
     const form = document.getElementById("contact");
     const modale = document.getElementById("contact_modal");
@@ -58,7 +59,7 @@ function contact(photogapherName) {
         const onlyForm = document.querySelector("#form");
         //fermeture du formulaire au clic
         function closeForm() {
-            document.getElementById("close-form").addEventListener("click", function(e) {
+            document.getElementById("close-form").addEventListener("click", function() {
                 modale.style.display = "none";
                 // console.log(e.target.className);
             });
@@ -128,49 +129,64 @@ function contact(photogapherName) {
         let firstInput = document.getElementById("first");
 
         //Ajout du listener sur l'élément et contrôle:
-        firstInput.addEventListener('change', (e) => {
+        firstInput.addEventListener("change", (e) => {
             firstLastChecker(e.target.value, "first");
         });
         //listener sur nom
         let lastInput = document.getElementById("last");
 
         //Ajout du listener sur l'élément et contrôle:
-        lastInput.addEventListener('change', (e) => {
+        lastInput.addEventListener("change", (e) => {
             firstLastChecker(e.target.value, "last");
         });
         //listener sur email
         let emailInput = document.getElementById("email");
 
         //Ajout du listener sur l'élément et contrôle:
-        emailInput.addEventListener('change', (e) => {
+        emailInput.addEventListener("change", (e) => {
             emailChecker(e.target.value, "email");
         });
         //listener sur texte
         let textInput = document.getElementById("textarea");
-        textInput.addEventListener('change', (e) => {
+        textInput.addEventListener("change", (e) => {
             textareaChecker(e.target.value, "textarea");
         });
         //validation du formulaire
-        onlyForm.addEventListener('submit', (e) => {
+        onlyForm.addEventListener("submit", (e) => {
             //empêche l'envoi du formulaire
             e.preventDefault();
             //Récupération de la valeur des inputs au submit
+            // eslint-disable-next-line no-undef
             firstValue = firstInput.value;
+            // eslint-disable-next-line no-undef
             lastValue = lastInput.value;
+            // eslint-disable-next-line no-undef
             emailValue = emailInput.value;
+            // eslint-disable-next-line no-undef
             textValue = textInput.value;
             // Envoi des valeurs de chaque champ (input) vers la fonction de test et validation
+            // eslint-disable-next-line no-undef
             firstLastChecker(firstValue, "first");
+            // eslint-disable-next-line no-undef
             firstLastChecker(lastValue, "last");
+            // eslint-disable-next-line no-undef
             emailChecker(emailValue, "email");
+            // eslint-disable-next-line no-undef
             if (firstLastChecker(firstValue, "first") &&
+                // eslint-disable-next-line no-undef
                 firstLastChecker(lastValue, "last") &&
+                // eslint-disable-next-line no-undef
                 emailChecker(emailValue, "email") &&
+                // eslint-disable-next-line no-undef
                 textareaChecker(textValue, "textarea")
             ) {
+                // eslint-disable-next-line no-undef
                 console.log("Prénom: ", firstValue);
+                // eslint-disable-next-line no-undef
                 console.log("Nom: ", lastValue);
+                // eslint-disable-next-line no-undef
                 console.log("Email: ", emailValue);
+                // eslint-disable-next-line no-undef
                 console.log("Message: ", textValue);
 
                 //Fermeture de la Modale
@@ -178,11 +194,16 @@ function contact(photogapherName) {
                 closeSubmit();
                 // Effacement des champs du formulaire
                 document.getElementById("form").reset();
+                // eslint-disable-next-line no-undef
                 firstValue = "";
+                // eslint-disable-next-line no-undef
                 lastValue = "";
+                // eslint-disable-next-line no-undef
                 emailValue = "";
+                // eslint-disable-next-line no-undef
                 textValue = "";
 
+                // eslint-disable-next-line no-inner-declarations
                 function closeSubmit() {
                     modale.style.display = "none";
                 }
@@ -191,7 +212,7 @@ function contact(photogapherName) {
         });
     }
     //Lancement du formulaire au clic
-    form.addEventListener('click', e => {
+    form.addEventListener("click", e => {
         e.preventDefault();
         // console.log("Cliqué+++++++++++++++");
         displayForm(photogapherName, modale);

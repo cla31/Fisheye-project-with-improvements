@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 class Photographer {
     constructor(datas) {
         this.id = datas.id;
@@ -25,7 +26,7 @@ class Photographer {
                 <p class="slogan" tabindex="0" aria-label="${this.tagline}">${this.tagline}</p>
                 <p class="price" tabindex="0" aria-label="${this.price} euros par jour">${this.price}€/jour</p>
             </div>
-        </article>`
+        </article>`;
     }
 
     //Fonction qui gère l'affichage du header dans la page photographer.html
@@ -45,10 +46,10 @@ class Photographer {
             </aside>
             <div class="photograph-header__container-img" aria-label="portrait du photographe" tabindex="0">
                 <img class="photograph-header__container-img__img" tabindex="0" src="assets/photographers/Photographers_ID_Photos/${this.portrait}" alt="portrait de${this.name}" tabindex="1" />
-            </div>`
+            </div>`;
     }
     displayPrice() {
-        return `${this.price}`
+        return `${this.price}`;
     }
 }
 

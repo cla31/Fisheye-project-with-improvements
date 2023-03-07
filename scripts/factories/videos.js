@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 class VideoMedia {
     constructor(datas) {
         this.id = datas.id;
@@ -30,7 +31,7 @@ class VideoMedia {
                     <em class="${this.heart}  fa-heart" data-id="${this.id}" aria-label="likes" tabindex="0" role="button"></em>
                 </div>
             </div>
-        </article>`
+        </article>`;
     }
     inc() {
         if (this.value == false) {

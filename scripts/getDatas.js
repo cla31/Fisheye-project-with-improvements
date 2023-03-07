@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 const pathJsonProject = "./data/photographers.json";
 // Fonction pour récupérer les données via le fetch
+// eslint-disable-next-line no-unused-vars
 async function getDatas(pathJson) {
     try {
         const fetchJson = await fetch(pathJson);

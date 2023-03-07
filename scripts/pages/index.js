@@ -1,7 +1,7 @@
 function displayPhotographers(id, photographers) {
     try {
-        document.getElementById(id).innerHTML = ` ${photographers.map( photograph =>  {return photograph.displayPhotographer()
-        }).join('')}`;
+        document.getElementById(id).innerHTML = ` ${photographers.map( photograph =>  {return photograph.displayPhotographer();
+        }).join("")}`;
     } catch (erreur) {
         console.log(erreur);
     }
@@ -15,7 +15,7 @@ function displayPhotographers(id, photographers) {
 
 function Objects(elements, Instance) {
     try {
-        objectElements = elements.map(function instance(element) {
+        const objectElements = elements.map(function instance(element) {
             return new Instance(element);
         });
         return objectElements;
@@ -27,9 +27,11 @@ function Objects(elements, Instance) {
 
 async function orchestrator(pathJson) {
     try {
+        // eslint-disable-next-line no-undef
         const jsonDatas = await getDatas(pathJson);
         const dataPhotos = jsonDatas.photographers;
         console.log("Les datas des photographes: ", dataPhotos);
+        // eslint-disable-next-line no-undef
         const objectPhotographers = Objects(dataPhotos, Photographer);
         console.log("Les objets photographes: ", objectPhotographers);
         displayPhotographers("photographers", objectPhotographers);
@@ -38,4 +40,5 @@ async function orchestrator(pathJson) {
         console.log(erreur);
     }
 }
+// eslint-disable-next-line no-undef
 orchestrator(pathJsonProject);

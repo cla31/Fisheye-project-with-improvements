@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 class ImageMedia {
     constructor(datas) {
         this.id = datas.id;
@@ -29,7 +30,7 @@ class ImageMedia {
                         <em class="${this.heart} fa-heart" aria-label="likes" tabindex="0" role="button"></em>                                         
                     </div>
                 </div>
-            </article>`
+            </article>`;
     }
     path() {
         return `assets/photographers/${this.photographerId}/${this.image}`;
