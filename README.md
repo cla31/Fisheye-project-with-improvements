@@ -1,6 +1,5 @@
 # Fisheye-project-with-improvements
-<br/>
-<br/>
+
 ![LOGO](./assets/images/logo.png)
 <br/>
 <br/>
