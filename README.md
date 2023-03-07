@@ -14,4 +14,4 @@ Skills developed:
 - Develop a modular web application with design patterns
 - Write maintainable JavaScript code
 ##
-To view the page online click  :point_right:** [here]( https://cla31.github.io/Fisheye-project-with-improvements/)
+To view the page online click  :point_right: [here]( https://cla31.github.io/Fisheye-project-with-improvements/)
