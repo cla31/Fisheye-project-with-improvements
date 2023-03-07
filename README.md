@@ -20,3 +20,9 @@ Application overview  (in desktop version):
 <br/>
 <br/>
 ![DESKTOP-VERSION](./desktop-version.png)
+<br/>
+<br/>
+Application overview (in mobile version):
+<br/>
+<br/>
+![MOBILE-VERSION](./mobile-version.png)
