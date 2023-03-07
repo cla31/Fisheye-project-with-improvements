@@ -7,6 +7,7 @@
 
 Project 6 Fisheye Improvements from React JS Application Developer Training:
 - Added Eslint<br/>
+##
 Skills developed:
 - Ensuring the accessibility of a website
 - Manage site events with JavaScript
