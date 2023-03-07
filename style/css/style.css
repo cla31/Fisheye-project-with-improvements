@@ -1,0 +1,816 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+}
+.header h1 {
+  color: #901C1C;
+}
+.header h1:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 5px;
+  padding: 2px;
+}
+.header a:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 5px;
+  padding: 2px;
+}
+.header__logo {
+  height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main #photographers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .main #photographers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.photographer a {
+  text-decoration: none;
+}
+.photographer a:focus {
+  margin: 0 30px 0 60px;
+  display: inline-block;
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+@media screen and (max-width: 992px) {
+  .photographer a:focus {
+    margin: 0 0 0 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photographer a:focus {
+    margin: 0 0 0 0px;
+  }
+}
+.photographer p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.photographer .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photographer .card h2 {
+  color: #D3573C;
+  font-size: 2.25em;
+}
+.photographer .card .container-img {
+  overflow: hidden;
+  position: relative;
+  width: 290px;
+  height: 290px;
+}
+.photographer .card .container-img__img {
+  width: 100%;
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  top: 8px;
+  clip-path: circle(46%);
+}
+.photographer .card .container-img__img:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+.photographer .card__photographer-name {
+  text-align: center;
+}
+.photographer .card__photographer-name:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+.photographer .infos:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+.photographer .infos .city {
+  color: #901C1C;
+}
+.photographer .infos .city:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+.photographer .infos .slogan:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+.photographer .infos .price {
+  color: #757575;
+}
+.photographer .infos .price:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.photograph-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fafafa;
+}
+.photograph-header h1 {
+  color: #D3573C;
+  font-size: 3em;
+}
+.photograph-header h1:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 5px;
+  padding: 2px;
+}
+.photograph-header .localisation {
+  color: #901C1C;
+}
+.photograph-header .description {
+  color: #525252;
+  font-size: 1.125em;
+}
+.photograph-header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5%;
+}
+.photograph-header__title h2 {
+  margin: 0;
+  font-size: 1.5 em;
+}
+.photograph-header__title h2:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 5px;
+  padding: 2px;
+}
+.photograph-header__title p:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 5px;
+  padding: 2px;
+}
+.photograph-header__button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.photograph-header__button .contact_button {
+  min-width: 170px;
+  background-color: #901c1c;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 10px 10px;
+}
+.photograph-header__button .contact_button:hover {
+  background-color: #db8876;
+  color: black;
+}
+.photograph-header__button .contact_button:focus {
+  background-color: #db8876;
+  color: black;
+  outline: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+}
+@media screen and (max-width: 992px) {
+  .photograph-header__button .contact_button {
+    position: fixed;
+    bottom: 220px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    z-index: 10;
+  }
+}
+.photograph-header__container-img {
+  overflow: hidden;
+  position: relative;
+  width: 290px;
+  height: 290px;
+}
+.photograph-header__container-img:focus {
+  outline: 2px solid #D3573C;
+  border-radius: 5px;
+  padding: 4px;
+}
+.photograph-header__container-img__img {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  top: 20px;
+  left: 20px;
+  clip-path: circle(46%);
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .photograph-header__container-img__img {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photograph-header__container-img__img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photograph-header__container-img {
+    width: 150px;
+    height: 300px;
+  }
+}
+
+#filter_container {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: 10;
+}
+
+#filter_container p {
+  font-weight: bold;
+}
+
+#filter_elements {
+  width: 170px;
+  height: auto;
+  color: #ffffff;
+  background-color: #901C1C;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px gray;
+  position: relative;
+}
+
+#up {
+  display: none;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  color: #ffffff;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  cursor: pointer;
+}
+.fa-chevron-down:focus,
+.fa-chevron-up:focus {
+  border-radius: 5px;
+  padding: 4px;
+  background-color: #db8876;
+}
+
+#filter_elements button {
+  padding: 1rem;
+  margin: 0;
+  background-color: #901C1C;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+#filter_elements button:nth-child(0n+4) {
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+#filter_date,
+#filter_titre {
+  display: none;
+  z-index: 15;
+}
+#filter_date:hover,
+#filter_titre:hover {
+  width: 100%;
+  background-color: #db8876;
+  color: black;
+}
+#filter_date:focus,
+#filter_titre:focus {
+  width: 100%;
+  background-color: #db8876;
+  color: black;
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+
+#filter_pop {
+  border-radius: 5px 5px 0px 0px;
+}
+#filter_pop:hover {
+  background-color: #db8876;
+  color: black;
+}
+#filter_pop:focus {
+  background-color: #db8876;
+  color: black;
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+
+#filter_titre {
+  border-radius: 0px 0px 5px 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery #medias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .gallery #medias {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-media .lien-media {
+  display: inline-block;
+}
+.card-media .lien-media:focus {
+  border: 4px solid #db8876;
+  border-radius: 15px;
+}
+.card-media .container-media {
+  overflow: hidden;
+  position: relative;
+  width: 290px;
+  height: 290px;
+}
+.card-media .container-media__photo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: 80% 18%;
+}
+.card-media .container-media__video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card-media .items-media {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  color: #901C1C;
+}
+.card-media .items-media__title p:focus {
+  outline: 2px solid #db8876;
+  border-radius: 5px;
+}
+.card-media .items-media__note {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.card-media .items-media__note p {
+  margin-right: 5px;
+}
+.card-media .items-media__note p:focus {
+  outline: 2px solid #db8876;
+  border-radius: 5px;
+}
+.card-media .items-media__note .fa-regular {
+  margin-top: 18px;
+}
+.card-media .items-media__note .fa-regular:focus {
+  outline: 2px solid #db8876;
+  border-radius: 5px;
+}
+.card-media .items-media__note .fa-solid {
+  margin-top: 18px;
+}
+.card-media .items-media__note .fa-solid:focus {
+  outline: 2px solid #db8876;
+  border-radius: 5px;
+}
+
+.card-infos {
+  position: fixed;
+  display: flex;
+  gap: 65px;
+  bottom: 0;
+  right: 35px;
+  background-color: #db8876;
+  border-radius: 5px 5px 0 0;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 60px;
+}
+.card-infos p {
+  margin: 0px;
+}
+
+#lightboxModal {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: white;
+  padding: 30px 30px;
+  margin: 0;
+  z-index: 30;
+}
+
+.lightboxMediaContainer {
+  padding: 70px;
+  border-radius: 10px;
+}
+
+#lightboxModal .lightboxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#lightboxModal .angleContainer {
+  display: flex;
+  height: 100%;
+  margin: 0px;
+}
+
+#lightboxModal .prev,
+#lightboxModal .next {
+  cursor: pointer;
+  color: #901c1c;
+  font-size: 4em;
+  margin: auto 20px;
+}
+
+#lightboxModal .prev:hover,
+#lightboxModal .next:hover,
+#lightboxModal .prev:focus,
+#lightboxModal .next:focus {
+  color: #d3573c;
+  outline: none;
+}
+
+#lightboxModal .crossCloseLightbox {
+  position: fixed;
+  top: 30px;
+  right: 54px;
+}
+
+#lightboxModal .crossCloseLightbox:focus {
+  outline: none;
+}
+
+#lightboxModal .svgCross:hover {
+  position: absolute;
+  cursor: pointer;
+  fill: #d3573c;
+}
+
+#lightboxModal .crossCloseLightbox:focus .svgCross {
+  fill: #d3573c;
+  outline: none;
+}
+
+#lightboxModal .lightboxMediaContainer {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 88%;
+}
+
+#lightboxModal .viewContainer {
+  width: 100%;
+  height: 95%;
+}
+
+#lightboxModal .media {
+  margin: 0px auto;
+  object-fit: contain;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#lightboxModal .media:focus {
+  outline: #d3573c solid 2px;
+}
+
+#lightboxModal .legendContainer {
+  height: 5%;
+}
+
+#lightboxModal .legend {
+  margin: 12px 0px 0px 0px;
+  color: #901c1c;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#lightboxModal .legend:focus {
+  color: #d3573c;
+  outline: none;
+}
+
+#contact_modal {
+  display: none;
+  position: fixed;
+  z-index: 25;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+aside {
+  display: block;
+}
+
+#headerModal h1 {
+  color: black;
+}
+#headerModal h1:hover {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+#headerModal h1:focus {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  #headerModal h1 {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #headerModal h1 {
+    font-size: 35px;
+  }
+}
+
+#contact_modal .contentModal {
+  border-radius: 5px;
+  background-color: #db8876;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1%;
+  left: 25%;
+  padding: 35px 35px 35px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  #contact_modal .contentModal {
+    width: 230px;
+    padding: 15px 15px 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #contact_modal .contentModal {
+    width: 320px;
+  }
+}
+
+#contact_modal #headerModal {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+#contact_modal form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+#contact_modal form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: self-start;
+  margin-bottom: 26px;
+}
+
+#contact_modal .formData {
+  margin: 0px 0px 5px;
+  padding: 0px;
+}
+
+#contact_modal label {
+  color: #312e2e;
+  font-size: 2.25em;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 768px) {
+  #contact_modal label {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #contact_modal label {
+    font-size: 1.25em;
+  }
+}
+
+label {
+  cursor: default;
+}
+
+#contact_modal input {
+  height: 68px;
+}
+
+#contact_modal input,
+#contact_modal textarea {
+  padding: 0px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+#contact_modal input:hover,
+#contact_modal textarea:hover {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+#contact_modal input:focus,
+#contact_modal textarea:focus {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+
+#contact_modal input,
+#contact_modal textarea {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 768px) {
+  #contact_modal input,
+#contact_modal textarea {
+    font-size: 0.57em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #contact_modal input,
+#contact_modal textarea {
+    font-size: 0.9em;
+  }
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  line-height: 1.15;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  button,
+input,
+select,
+textarea {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input::placeholder {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  textarea::placeholder {
+    padding-left: 5px;
+  }
+}
+
+#contact_modal .crossCloseModal {
+  cursor: pointer;
+  position: absolute;
+  top: 34px;
+  right: 35px;
+}
+#contact_modal .crossCloseModal:hover {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+#contact_modal .crossCloseModal:focus {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  #contact_modal .crossCloseModal {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+#contact_modal .contactButton {
+  background-color: #901C1C;
+  color: white;
+  width: 50%;
+}
+#contact_modal .contactButton:hover {
+  outline: 2px solid black;
+  border-radius: 5px;
+  background-color: #db8876;
+  color: black;
+}
+#contact_modal .contactButton:focus {
+  outline: 2px solid black;
+  border-radius: 5px;
+  background-color: #db8876;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  #contact_modal .contactButton {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

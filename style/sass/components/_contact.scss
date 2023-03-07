@@ -1,0 +1,211 @@
+// #form-contact {
+//     display: none;
+// }
+#contact_modal {
+    display: none;
+    position: fixed;
+    z-index: 25;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+aside {
+    display: block;
+}
+
+#headerModal h1 {
+    color: black;
+    &:hover {
+        outline: 2px solid black;
+        border-radius: 5px;
+    }
+    &:focus {
+        outline: 2px solid black;
+        border-radius: 5px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 23px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 35px;
+    }
+}
+
+#contact_modal .contentModal {
+    border-radius: 5px;
+    background-color: #db8876;
+    // background-color: aqua;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    padding: 35px 35px 35px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 230px;
+        padding: 15px 15px 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 320px;
+    }
+}
+
+#contact_modal #headerModal {
+    // background-color: aqua;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#contact_modal form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+#contact_modal form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: self-start;
+    margin-bottom: 26px;
+}
+
+#contact_modal .formData {
+    margin: 0px 0px 5px;
+    padding: 0px;
+}
+
+#contact_modal label {
+    color: #312e2e;
+    font-size: 2.25em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0px;
+    padding: 0px;
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 1.25em;
+    }
+}
+
+label {
+    cursor: default;
+}
+
+#contact_modal input {
+    height: 68px;
+}
+
+#contact_modal input,
+#contact_modal textarea {
+    padding: 0px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        outline: 2px solid black;
+        border-radius: 5px;
+    }
+    &:focus {
+        outline: 2px solid black;
+        border-radius: 5px;
+    }
+}
+
+#contact_modal input,
+#contact_modal textarea {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin: 0px;
+    padding: 0px;
+    @media screen and (max-width: 768px) {
+        font-size: 0.57em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 0.90em;
+    }
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    // font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+input::placeholder {
+    @media screen and (max-width: 768px) {
+        padding-left: 5px;
+    }
+}
+
+textarea::placeholder {
+    @media screen and (max-width: 768px) {
+        padding-left: 5px;
+    }
+}
+
+#contact_modal .crossCloseModal {
+    cursor: pointer;
+    position: absolute;
+    top: 34px;
+    right: 35px;
+    &:hover {
+        outline: 2px solid black;
+        border-radius: 5px;
+    }
+    &:focus {
+        outline: 2px solid black;
+        border-radius: 5px;
+    }
+    @media screen and (max-width: 768px) {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+#contact_modal .contactButton {
+    background-color: #901C1C;
+    color: white;
+    width: 50%;
+    &:hover {
+        outline: 2px solid black;
+        border-radius: 5px;
+        background-color: #db8876;
+        color: black;
+    }
+    &:focus {
+        outline: 2px solid black;
+        border-radius: 5px;
+        background-color: #db8876;
+        color: black
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
+}
