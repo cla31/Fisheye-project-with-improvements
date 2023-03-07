@@ -5,10 +5,6 @@
 # Fisheye-project-with-improvements
 ![LOGO](./assets/images/logo.png)
 <br/>
-Project 6 Fisheye Improvements from React JS Application Developer Training:
-- Added Eslint
-- Updating the readme file
-<br/>
 Application overview  (in desktop version):
 <br/>
 <br/>
