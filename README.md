@@ -4,8 +4,6 @@
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 # Fisheye-project-with-improvements
 ![LOGO](./assets/images/logo.png)
-#
-#
 <br/>
 Application overview  (in desktop version):
 <br/>
