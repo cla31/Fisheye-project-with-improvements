@@ -3,9 +3,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 # Fisheye-project-with-improvements
-
 ![LOGO](./assets/images/logo.png)
-
 <br/>
 <br/>
 Application overview  (in desktop version):
