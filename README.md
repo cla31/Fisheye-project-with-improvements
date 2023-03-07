@@ -7,4 +7,4 @@
 
 Project 6 Fisheye Improvements from React JS Application Developer Training:
 - Added Eslint
-- Updating the readme file
+
