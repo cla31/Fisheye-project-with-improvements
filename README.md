@@ -6,6 +6,7 @@
 ![LOGO](./assets/images/logo.png)
 
 Project 6 Fisheye Improvements from React JS Application Developer Training:
+Create an accessible site for a platform of photographers<br/>
 - Added Eslint<br/>
 ##
 Skills developed:
